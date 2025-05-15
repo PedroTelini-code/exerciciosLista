@@ -61,3 +61,32 @@ function leituraGrupos() {
         grupo++
     }
 }
+
+function exe2() {
+    let preco = 5.0;
+    let qtde = 120;
+    const despesa = 200;
+    let lucro = 400;
+    let aux = "";
+    let maiorLucro = 0;
+    qtdeMaiorLucro = 0;
+    precoMaiorLucro = 0;
+
+    while(preco >= 1.0){
+        if (lucro > maiorLucro) {
+            maiorLucro = Lucro;
+            precoMaiorLucro = preco;
+            qtdeMaiorLucro = qtde;
+        }
+        lucro = (preco * qtde) - despesa;
+        aux = aux + "\n" + (`Preço : ${preco} - Qtde: ${qtde} - Despesa: ${despesa} - Lucro: ${lucro}`);
+        preco = preco - 0.50;
+        qtde = qtde + 26;
+
+       
+        
+    }
+
+    alert(aux)
+    alert(`Maior lucro: ${maiorLucro} com preço ${precoMaiorLucro} e qtde ${qtdeMaiorLucro}`)
+}
